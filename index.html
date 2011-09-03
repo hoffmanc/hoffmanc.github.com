@@ -1,0 +1,30 @@
+<html>                                                                  
+ <head>                                                                  
+ <link rel="stylesheet" href="demo.css" type="text/css" media="screen"> 
+ <link rel="stylesheet" href="demo-print.css" type="text/css" media="print">
+ <script type="text/javascript" src="jquery-1.6.2.js"></script>          
+ <script type="text/javascript" src="textile.js"></script>          
+ <script type="text/javascript" src="raphael.js"></script>          
+ <script type="text/javascript" src="tiger.js"></script>          
+ <script type="text/javascript">                                         
+    window.onload = function() {
+        var r = Raphael(tiger).translate(200, 200);
+    };
+
+    $(document).ready( function(){
+        $("body").html(convert($("body").html()));
+    });
+ </script>                                                               
+ </head>                                                                 
+ <body>                                                                  
+   <!-- we will add our Textile content here -->                                        
+h1. Hello, world.
+
+** First post! **
+
+h1. BAM
+
+Some content &copy; Raphael JS.
+ </body>                                                                 
+ </html>
+
