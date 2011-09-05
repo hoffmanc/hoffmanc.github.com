@@ -4,34 +4,17 @@
  <link rel="stylesheet" href="demo-print.css" type="text/css" media="print">
  <script type="text/javascript" src="jquery-1.6.2.js"></script>          
  <script type="text/javascript" src="textile.js"></script>          
-<!--
- <script type="text/javascript" src="raphael.js"></script>          
- <script type="text/javascript" src="tiger.js"></script>          
--->
  <script type="text/javascript">                                         
-    //window.onload = function() {
-    //    var r = Raphael(tiger).translate(200, 200);
-    //};
-
     $(document).ready( function(){
-        elem = "div.textile";
-        $(elem).html(convert($(elem).html()));
+        var referrer = document.referrer;
+        $("div#about_you").text(referrer);
     });
  </script>                                                               
  </head>                                                                 
  <body>                                                                  
-    <div class="nav">
-        <a href="referrer.html">referrer test</a>
-    </div>
-    <div class="textile">
-        h1. Hello, world.
-
-        ** First post! **
-
-        h1. BAM
-
-        Some content &copy; Raphael JS.
-     </div>                                                                 
+     <div id="about_you">
+     </div>
+     <p>I know this just via javascript.</p>
  </body>
  </html>
 
